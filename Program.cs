@@ -3,13 +3,15 @@ Console.WriteLine("Hello, World!");
 Console.WriteLine("Hej hej igen");
 
 
+Console.Write("Skriv din ålder: ");
+int num = int.Parse(Console.ReadLine());
 
-int num = 0;
-string name = "viggo";
-Console.WriteLine($"Mitt namn är {name}"); 
-string? input = Console.ReadLine();
-
-Console.WriteLine(input);
+Console.Write("Skriv ditt namn: ");
+string? name = Console.ReadLine();
 
 
 
+for (int i = 0; i < name.Length; i++)
+{
+    Console.WriteLine($"Hej {name}! Du är välkommen! Och du är {num} gammal!");
+}
